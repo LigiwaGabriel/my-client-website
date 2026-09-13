@@ -11,8 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
     toggle.setAttribute("aria-expanded", String(isOpen));
   });
 
-  // Close the menu after a link inside it is chosen, so it doesn't
-  // stay open when the new page loads.
   menu.addEventListener("click", function (event) {
     if (event.target.tagName === "A") {
       menu.classList.remove("is-open");
