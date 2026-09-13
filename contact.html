@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Booking — Kilnfolk Ceramics</title>
+  <meta name="description" content="Contact Kilnfolk Ceramics or book a place in a pottery course using our booking form.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <p class="site-title"><a href="index.html">Kilnfolk Ceramics</a></p>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero wrap">
+      <h1>Contact &amp; booking</h1>
+      <p>Reserve a spot in a course, or send a question about clay, glazes,
+        or studio access.</p>
+    </section>
+
+    <section class="wrap">
+      <h2>Booking form</h2>
+      <p class="required-note">Fields marked <strong>required</strong> must be completed before the form can be sent.</p>
+
+      <form action="#" method="post">
+
+        <div class="form-grid">
+
+          <div class="field">
+            <label for="full-name">Full name <span aria-hidden="true">*</span></label>
+            <input type="text" id="full-name" name="full-name" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone number <span class="hint">(optional, for booking changes)</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+
+          <div class="field">
+            <label for="course">Which course are you interested in? <span aria-hidden="true">*</span></label>
+            <select id="course" name="course" required>
+              <option value="">Select a course</option>
+              <option value="wheel-intro">Introduction to Wheel-Throwing</option>
+              <option value="handbuild-tableware">Handbuilding: Tableware</option>
+              <option value="glaze-workshop">Glaze Chemistry Workshop</option>
+              <option value="open-studio">Open studio membership only</option>
+            </select>
+          </div>
+
+          <fieldset>
+            <legend>Have you taken a pottery class before?</legend>
+
+            <div class="radio-row">
+              <input type="radio" id="experience-none" name="experience" value="none" checked>
+              <label for="experience-none">No, I'm completely new</label>
+            </div>
+
+            <div class="radio-row">
+              <input type="radio" id="experience-some" name="experience" value="some">
+              <label for="experience-some">Some, a class or two</label>
+            </div>
+
+            <div class="radio-row">
+              <input type="radio" id="experience-lots" name="experience" value="experienced">
+              <label for="experience-lots">Yes, I throw or handbuild regularly</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="message">Message <span class="hint">(tell us about scheduling needs, allergies to clay/glaze materials, or anything else)</span></label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="submit">Send booking request</button>
+
+        </div>
+      </form>
+    </section>
+
+    <section class="wrap">
+      <h2>Other ways to reach us</h2>
+      <address>
+        Kilnfolk Ceramics<br>
+        Ntinda Road, Kampala, Uganda<br>
+        <a href="mailto:hello@kilnfolkceramics.example">hello@kilnfolkceramics.example</a><br>
+        <a href="tel:+256700000000">+256 700 000 000</a>
+      </address>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <address>
+        Kilnfolk Ceramics · Ntinda Road, Kampala<br>
+        <a href="mailto:hello@kilnfolkceramics.example">hello@kilnfolkceramics.example</a>
+      </address>
+      <p>&copy; 2026 Kilnfolk Ceramics. Semantic HTML prototype for coursework.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
